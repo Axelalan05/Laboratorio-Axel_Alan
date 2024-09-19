@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(21, 21, 75);
+  color: white;
+  height: auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: rgb(21, 21, 75);
+  background-color: white;
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.info-pag,
+p {
+  font-size: 19px;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-pag,
+h3 {
+  text-align: center;
+  font-size: 23px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.poema {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: auto 750px auto 750px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img-paisaje {
+  height: 500px;
+  margin: 20px auto 20px 495px;
+}
+
+.biografia {
+  margin-bottom: 20px;
+}
+
+.biografia ul {
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.biografia img {
+  margin: auto auto auto 775px;
+  height: 450px;
+}
+
+.biografia figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(21, 21, 75);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+footer p {
+  text-align: center;
+  color: lightgray;
+}
