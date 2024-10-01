@@ -1,6 +1,6 @@
-# Trabajo Practico 2 - Laboratorio
+# Laboratorio - PEyLB2024
 
-Laboratorio 2, creado con HTML y CSS.
+Laboratorio, creado con HTML y CSS.
 
 ## Autor
 
