@@ -1,4 +1,4 @@
-# Laboratorio - PEyLB2024
+# Laboratorio - PEyLW2024
 
 Laboratorio, creado con HTML y CSS.
 
