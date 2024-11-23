@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(21, 21, 75);;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 10px;
+            margin: auto;
+        }
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .card.matched {
+            background-color: #28a745;
+            cursor: default;
+        }
+        .card.flipped {
+            background-color: #fff;
+            color: #333;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Juego de Memoria</h1>
+        <div id="game-board"></div>
+        <div id="status"></div>
+    </div>
+    <script src="./juegos.js"></script>
+</body>
+</html>

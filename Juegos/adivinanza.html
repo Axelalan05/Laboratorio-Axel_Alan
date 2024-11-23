@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(21, 21, 75);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #game-section {
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #game-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #game-section input {
+            padding: 10px;
+            font-size: 16px;
+            width: 60%;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #game-section button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #game-section button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-section">
+        <h1>Juego de Adivinanza de Números</h1>
+        <p>Adivina el número entre 1 y 100</p>
+        <input type="number" id="guess-input" placeholder="Tu número" />
+        <button id="check-button">Comprobar</button>
+        <button id="reset-button" style="display: none;">Reiniciar</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="./juegos.js"></script>
+</body>
+</html>

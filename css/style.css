@@ -142,6 +142,43 @@ h3 {
   padding-bottom: 20px;
 }
 
+.entretenimiento h3 {
+  text-align: center;
+}
+
+.info-juego, .info-juego-enlaces {
+  text-align: center;
+}
+
+.info-juego-enlaces {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.enlaces_juegos {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: rgb(21, 21, 75);
+  color: white;
+  margin-top: 2px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 2%;
+  border-radius: 30%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.enlaces_juegos a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.enlaces_juegos a:hover {
+  color: lightblue;
+}
+
 .articulo {
   max-height: 300px;
   overflow-y: auto;

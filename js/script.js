@@ -40,6 +40,39 @@ for (let campo in campos_formulario) {
   actualizarTabla(campos_formulario[campo], celdas_tabla[campo]);
 }
 
+// Selección de campos adicionales
+const contactoRadios = document.querySelectorAll('input[name="contacto"]');
+const suscripcionCheckboxes = document.querySelectorAll(
+  'input[name="suscripcion"]'
+);
+
+const celdaContacto = document.querySelector(
+  "table tbody tr:nth-child(9) td:nth-child(2)"
+);
+const celdaSuscripcion = document.querySelector(
+  "table tbody tr:nth-child(10) td:nth-child(2)"
+);
+
+contactoRadios.forEach((radio) => {
+  radio.addEventListener("change", () => {
+    const seleccionado = document.querySelector(
+      'input[name="contacto"]:checked'
+    );
+    celdaContacto.textContent = seleccionado ? seleccionado.value : "";
+  });
+});
+
+suscripcionCheckboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    const seleccionados = Array.from(suscripcionCheckboxes)
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value);
+    celdaSuscripcion.textContent = seleccionados.join(", ");
+  });
+});
+
+
+// Notificaciones y Suscripciones
 function mostrarOcultarCV() {
   const cvCompleto = document.getElementById("cv-completo");
   const cvAbreviado = document.getElementById("cv-abreviado");

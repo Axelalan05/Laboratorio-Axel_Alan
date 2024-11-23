@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(21, 21, 75);;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #game-container {
+            text-align: center;
+            background: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #game-container h1 {
+            font-size: 24px;
+        }
+        .choice-buttons {
+            margin: 20px 0;
+        }
+        .choice-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .choice-buttons button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        #score {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Piedra, Papel o Tijera</h1>
+        <p>Selecciona tu opción:</p>
+        <div class="choice-buttons">
+            <!--No habia un emoji de pierdra jajajaja-->
+            <button id="rock">🗿 Piedra</button>
+            <button id="paper">📄 Papel</button>
+            <button id="scissors">✂️ Tijera</button>
+        </div>
+        <div id="result">¡Haz tu jugada!</div>
+        <div id="score"></div>
+    </div>
+
+    <script src="./juegos.js"></script>
+</body>
+</html>
